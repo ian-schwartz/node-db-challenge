@@ -44,10 +44,10 @@ router.post('/:id/tasks', (req, res) => {
           res.status(201).json(tasks);
         })
       } else {
-        res.status(404).json({ message: 'Could not find task with given id.' })
+        res.status(404).json({ message: 'Could not find project with given id.' })
       }
     })
-    .catch (() => res.status(500).json({ message: 'Failed to create new step' }));
+    .catch (() => res.status(500).json({ message: 'Failed to create new task' }));
 });
 
 
